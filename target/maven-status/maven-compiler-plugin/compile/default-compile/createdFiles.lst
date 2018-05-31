@@ -1,0 +1,14 @@
+com\automationpractice\pages\component\BlockTopMenuComponent.class
+com\automationpractice\pages\BasePage.class
+com\automationpractice\pages\component\NavComponent.class
+com\automationpractice\pages\component\LayerCartComponent.class
+com\automationpractice\models\Address.class
+com\automationpractice\pages\component\ShoppingCartComponent.class
+com\automationpractice\pages\CreateAccountPage.class
+com\automationpractice\Helpers.class
+com\automationpractice\models\ProductModel.class
+com\automationpractice\pages\HomePage.class
+com\automationpractice\pages\LoginMyStorePage.class
+com\automationpractice\pages\ProductsPage.class
+com\automationpractice\pages\MyAccountPage.class
+com\automationpractice\models\User.class
