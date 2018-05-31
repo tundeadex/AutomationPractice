@@ -1,0 +1,56 @@
+I have used the following technologies
+
+Maven - as build tool. Makes management of dependencies easier. Also very good for general build life cycle management
+
+selenium webdriver (java) - because it is one of the most popular opensource libraries for UI automation.
+It has multi language support, cross browser capabilities and quite good at scaling using selenium grid
+
+JUnit - One of the most popular unit testing frameworks in the JVM world. I chose it to organise my test suites and it has a great assertion library
+
+commons-lang3 - library from Apache with a lot of great utility functions. I'm a huge fan of the RandomStringUtils class
+
+Design
+
+using typical maven folder structure with main and test folders under src
+
+.
+├── README.md
+├── about.txt
+├── pom.xml
+└── src
+    ├── main
+    │   ├── java
+    │   │   └── com
+    │   │       └── automationpractice
+    │   │           ├── Helpers.java
+    │   │           ├── models
+    │   │           │   ├── Address.java
+    │   │           │   ├── ProductModel.java
+    │   │           │   └── User.java
+    │   │           └── pages
+    │   │               ├── BasePage.java
+    │   │               ├── CreateAccountPage.java
+    │   │               ├── HomePage.java
+    │   │               ├── LoginMyStorePage.java
+    │   │               ├── MyAccountPage.java
+    │   │               ├── ProductsPage.java
+    │   │               └── component
+    │   │                   ├── BlockTopMenuComponent.java
+    │   │                   ├── LayerCartComponent.java
+    │   │                   ├── NavComponent.java
+    │   │                   └── ShoppingCartComponent.java
+    │   └── resources
+    │       └── chromedrivers
+    │           ├── chromedriver.exe
+    │           ├── chromedriver_linux64
+    │           └── chromedriver_mac64
+    └── test
+        └── java
+            └── com
+                └── automationpractice
+                    └── TestClass.java
+
+Test helpers and Ui page objects artifacts live under com.automationpractice package in src/main
+
+Chrome drivers are included under src/main/resources and helper function available to ensure one run test on any Operating System without extra configuration
+
